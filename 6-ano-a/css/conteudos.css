@@ -41,6 +41,8 @@ body {
     background: #efefef;
     font-family: Lato;
     font-size: 1rem;
+    background: url("../img/Fundo_site_dark.png") fixed;
+    background-size: 30%;
 }
 
 

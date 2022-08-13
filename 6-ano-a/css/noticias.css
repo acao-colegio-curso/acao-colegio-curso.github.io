@@ -41,6 +41,8 @@ body {
     background: #efefef;
     font-family: Lato;
     font-size: 1rem;
+    background: url("../img/Fundo_site_dark.png") fixed;
+    background-size: 30%;
 }
 
 
@@ -136,6 +138,7 @@ body {
 /* CONTEÚDO */
 .section__conteudo {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin-left: 20px;

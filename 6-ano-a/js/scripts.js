@@ -1,5 +1,16 @@
 const button = document.querySelector("#button");
 const menu = document.querySelector("#menu-lateral");
+const conteudo = document.querySelector(".section__conteudo");
+
+
+// DESCKTOP
+if (window.screen.availWidth >= 800) {
+    menu.classList.add("active");
+    button.style.display = "none";
+    conteudo.style.width = "calc(100% - 200px)";
+    conteudo.style.marginLeft = "200px";
+}
+
 
 function toggleMenu(event) {
 
@@ -8,10 +19,6 @@ function toggleMenu(event) {
 
     const active = menu.classList.contains("active");
 
-    // if (window.screen.availWidth >= 800) {
-    //     // menu.classList.add("active");
-    //     console.log("oi");
-    // }
 
     if (active) {
         button.innerHTML = `<span class="close"></span>`;
