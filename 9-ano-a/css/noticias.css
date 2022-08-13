@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/***** MENU
+
+*** ROOT
+*** FONTES
+*** BODY
+*** LARGURA-MAXIMA
+*** HEADER
+
+*/
+
+
+
+/* ROOT */
+:root {
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+
+
+/* FONTES */
+@font-face {
+    font-family: RopaSans;
+    src: url(../fonts/RopaSans/RopaSans-Regular.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Rambla;
+    src: url(../fonts/Rambla/Rambla-Regular.ttf);
+}
+
+
+
+/* BODY */
+body {
+    background: #efefef;
+    font-family: Lato;
+    font-size: 1rem;
+    background: url("../img/Fundo_site_dark.png") fixed;
+    background-size: 30%;
+}
+
+
+
+/* LARGURA-MAXIMA */
+.largura-maxima {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* HEADER */
+.header {
+    width: 20px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    transition: .5s;
+    background: #292929;
+}
+/* ACTIVE */
+.header.active {
+    width: 200px;
+    height: 100vh;
+}
+.header__menu-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 40px 0 20px;
+}
+.header__figure {
+    margin-bottom: 2rem;
+}
+.header__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+}
+.header__figure figcaption {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: tomato;
+}
+.header__navegation ul li {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: .133333333rem solid rgba(255, 255, 255, 0.5);
+}
+.header__navegation ul li:last-child {
+    border-bottom: none;
+}
+.header__navegation ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.header__menu-button {
+    width: 20px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    outline-style: none;
+    background: linear-gradient(to right, rgba(0,0,0,0.1), #efefef);
+}
+.header__menu-button span.close::before {
+    content: "\2329";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: tomato;
+}
+.header__menu-button span.open::before {
+    content: "\232A";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/* CONTEÚDO */
+.section__conteudo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background: #efefef;
+}
+.section__conteudo p {
+    text-align: center;
+    margin-top: 3rem;
+}
